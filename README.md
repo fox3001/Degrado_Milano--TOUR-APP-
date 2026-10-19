@@ -1,7 +1,8 @@
-# Vizi Nascosti — Milano · Seicento
+# Vizi Nascosti — Tour Game
 
-> **Scopo di questo repo:** archivio completo del gioco (app, regole, analisi e idee di design) come **base per trasformarlo in un gioco di carte**.
-> Tutte le regole, le varianti e gli appunti per la versione carte sono in **[REGOLE-E-IDEE.md](REGOLE-E-IDEE.md)**.
+> **Scopo di questo repo: VERSIONE TOUR GAME, quella attiva su cui si lavora.**
+> Usa il regolamento semplificato (con il Tabacco), descritto in **[REGOLAMENTO-TOUR.md](REGOLAMENTO-TOUR.md)**.
+> L'archivio completo per il futuro gioco di carte è nel repo `fox3001/Degrado_Milano-`.
 
 Web app di supporto a un gioco dal vivo a ruoli segreti (Nobile, Vizioso, Moralista, Cicisbeo) per un tour a piedi di 20–30 persone.
 
@@ -20,6 +21,7 @@ Web app di supporto a un gioco dal vivo a ruoli segreti (Nobile, Vizioso, Morali
 | `.github/workflows/deploy.yml` | Pubblicazione automatica a ogni modifica |
 | `archivio/` | Versione originale (prima delle correzioni), schede PNG originali, vecchi backup. **Non viene pubblicata** |
 | `ANALISI.md` | Analisi completa: bug, problemi delle schede e del regolamento |
+| `REGOLAMENTO-TOUR.md` | **Il regolamento in uso in questa versione** |
 | `REGOLE-E-IDEE.md` | Tutte le regole (v8.0, aggiunte, versione completa e semplificata) e le idee per il gioco di carte |
 
 ## Cambiare un'immagine
