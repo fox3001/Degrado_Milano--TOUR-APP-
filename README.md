@@ -77,7 +77,7 @@ Dal PC, nella cartella del repo:
 ```
 firebase init hosting:github
 ```
-Rispondi `fox3001/Degrado_Milano-` quando chiede il repository. Il comando crea da solo il segreto `FIREBASE_SERVICE_ACCOUNT` su GitHub.
+Rispondi `fox3001/Degrado_Milano--TOUR-APP-` quando chiede il repository. Il comando crea da solo il segreto `FIREBASE_SERVICE_ACCOUNT` su GitHub.
 
 Quando chiede di sovrascrivere i file del workflow, rispondi **no**, perché il file `deploy.yml` c'è già. Da lì in poi, ogni modifica in `public/` pubblica il sito da sola.
 
