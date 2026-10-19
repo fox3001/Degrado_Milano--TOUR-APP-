@@ -1,6 +1,7 @@
 # Pubblica automaticamente il sito su Firebase a ogni modifica del ramo main
 # (per esempio quando sostituisci un'immagine in public/img da GitHub).
-# Serve il segreto FIREBASE_SERVICE_ACCOUNT: vedi README.md, "Pubblicazione automatica".
+# Finché il segreto FIREBASE_SERVICE_ACCOUNT non è configurato (vedi README,
+# "Pubblicazione automatica"), il workflow si ferma senza errori e non manda email.
 name: Pubblica su Firebase
 
 on:
@@ -15,8 +16,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Controlla se la pubblicazione automatica è configurata
+        id: check
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$SA" ]; then
+            echo "configurato=no" >> "$GITHUB_OUTPUT"
+            echo "::notice::Pubblicazione automatica non ancora configurata: salto il deploy."
+          else
+            echo "configurato=si" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: steps.check.outputs.configurato == 'si'
       - uses: FirebaseExtended/action-hosting-deploy@v0
+        if: steps.check.outputs.configurato == 'si'
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
