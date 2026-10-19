@@ -4,7 +4,7 @@
 > Usa il regolamento semplificato (con il Tabacco), descritto in **[REGOLAMENTO-TOUR.md](REGOLAMENTO-TOUR.md)**.
 > L'archivio completo per il futuro gioco di carte è nel repo `fox3001/Degrado_Milano-`.
 
-Web app di supporto a un gioco dal vivo a ruoli segreti (Nobile, Vizioso, Moralista, Cicisbeo) per un tour a piedi di 20–30 persone.
+Web app di supporto a un gioco dal vivo a ruoli segreti (Nobile, Vizioso, Moralista, Cicisbeo) per un tour a piedi di 8–30 persone.
 
 - **Sito:** https://degrado-milano.web.app
 - **Area guida:** https://degrado-milano.web.app/#guida (non c'è più il link in home)

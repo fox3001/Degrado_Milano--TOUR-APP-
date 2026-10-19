@@ -579,7 +579,7 @@ const DEFAULT_GESTI = [
 ];
 const GESTO_WHEN = 'Fallo ogni volta che fai uno scambio o guadagni Monete. Tutti i {PLURALE} hanno il tuo stesso gesto: se lo vedi fare, sai chi è dei tuoi.';
 
-const MIN_P = 20, MAX_P = 30;
+const MIN_P = 8, MAX_P = 30;
 const NET_ERR = 'Connessione assente o lenta. Controlla la rete e riprova.';
 
 /* ───────── UTILITÀ ───────── */
@@ -704,7 +704,7 @@ tabs.forEach(t=>t.addEventListener('click', ()=>goCard(+t.dataset.i)));
 })();
 
 /* ───────── AREA GUIDA (indirizzo/#guida) ───────── */
-let nP = MIN_P, partitaAttiva = null, currentList = [], authUser = null, authKnown = false, gesti = DEFAULT_GESTI.slice(), gestiPartita = null;
+let nP = 20, partitaAttiva = null, currentList = [], authUser = null, authKnown = false, gesti = DEFAULT_GESTI.slice(), gestiPartita = null;
 
 function inGuide(){ return location.hash.toLowerCase() === '#guida'; }
 function routeGuide(){
